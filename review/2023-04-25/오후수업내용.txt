@@ -35,4 +35,15 @@
     
     
 5. Git Bash 에서 명령어 입력하여 pull, add, commit, push 해보기
-  - git init
+  - git init -> git 시작하기 위해 초기화 (폴더에 숨김 폴더 .git 생성됨)
+  - git clone repo주소 -> 현재 폴더에 repo 복사됨. 최초에 한번 실행
+  - git pull -> github에서 코드 내려받기
+  - git add 파일이름.확장명 -> 지정 파일만 stage에 올림
+  - git add . -> 현재 폴더의 모든 파일을 지정하여 stage에 올림
+  - git commit -m '메시지' -> '메시지'를 메시지로 새로운 버전을 만듦
+  - git push -> 파일을 저장소인 github에 올림
+
+6. 멘토님께 질문
+  - CS 공부하기 위한 도서 추천 -> 멘토님께서 책으로 공부하지 않으셨기에 블로그 추천해주심
+    https://yoon990.tistory.com/38
+  
