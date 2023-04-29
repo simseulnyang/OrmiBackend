@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 작성하기</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1 class="header-title"><a href="index.html">HTML/CSS</a></h1>
+      <div class="header-link">
+        <a href="login.html">로그인</a>
+        <a href="join.html">회원가입</a>
+        <a href="index.html">글목록</a>
+      </div>
+    </div>
+    <!-- header -->
+    <!-- body -->
+    <div class="main write">
+      <h2>글 작성하기</h2>
+      <div>
+        <form>
+          <table class="write-tl">
+            <colgroup>
+              <col style="width: 120px" />
+              <col />
+            </colgroup>
+            <tr>
+              <th><label for="wt-category">카테고리</label></th>
+              <td>
+                <select name="wtCategory" id="wt-category">
+                  <option value="일반">일반</option>
+                  <option value="공지">공지</option>
+                  <option value="질문">질문</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="wt-title">제목</label></th>
+              <td><input type="text" id="wt-title" name="wtTitle" /></td>
+            </tr>
+            <tr>
+              <th><label for="wt-content">내용</label></th>
+              <td>
+                <textarea name="wtContent" id="wt-content"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="wt-file">파일첨부</label></th>
+              <td><input type="file" id="wt-file" name="wtFile" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="write-btn">
+        <input type="submit" value="글 작성하기" />
+      </div>
+    </div>
+    <!-- //body -->
+    <!-- footer -->
+    <div>
+      <p class="footer">Copyright 2023. Simseulnyang All rights reserved.</p>
+    </div>
+    <!-- //footer -->
+  </body>
+</html>

@@ -14,13 +14,83 @@
       <h1 class="header-title"><a href="index.html">HTML/CSS</a></h1>
       <div class="header-link">
         <a href="login.html">로그인</a>
-        <a href="#">회원가입</a>
+        <a href="join.html">회원가입</a>
         <a href="index.html">글목록</a>
       </div>
     </div>
     <!-- header -->
     <!-- body -->
-    <div class="main">회원가입</div>
+    <div class="main join">
+      <h2>회원가입</h2>
+      <form method="post">
+        <div>
+          <table class="join-table">
+            <colgroup>
+              <col style="width: 90px" />
+              <col />
+            </colgroup>
+            <tr>
+              <th>
+                <label for="user-id">아이디</label>
+              </th>
+              <td>
+                <input type="text" id="user-id" name="userId" />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="user-pw">비밀번호</label>
+              </th>
+              <td>
+                <input type="password" id="user-pw" name="userPw" />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="gender">성별</label>
+              </th>
+              <td>
+                <input type="radio" id="gender1" name="gender" checked />
+                <label for="gender1">남성</label>
+                <input type="radio" id="gender2" name="gender" />
+                <label for="gender2">여성</label>
+                <input type="radio" id="gender3" name="gender" />
+                <label for="gender3">선택안함</label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="phone">전화번호</label>
+              </th>
+              <td>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="ex. 010-0000-0000"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email">이메일</label>
+              </th>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ex. sample@naver.com"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+      <div class="join-btn">
+        <input type="submit" value="회원가입" />
+      </div>
+    </div>
     <!-- //body -->
     <!-- footer -->
     <div>

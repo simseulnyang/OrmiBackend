@@ -156,7 +156,7 @@ body {
   width: 100px;
 }
 
-[type="text"],
+.login-container [type="text"],
 [type="password"] {
   margin-left: 10px;
   width: 100%;
@@ -183,8 +183,9 @@ body {
   box-sizing: border-box;
 }
 
+/* 아이디찾기, 비밀번호찾기, 회원가입 */
+
 .login-searchself {
-  /* 아이디찾기, 비밀번호찾기, 회원가입 */
   width: 100%;
   text-align: center;
   display: flex;
@@ -199,4 +200,117 @@ body {
 .login-searchself a:nth-child(2) {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+}
+
+/* 회원가입 */
+.main.join {
+  margin: 30px auto 0;
+  width: 380px;
+}
+
+.join > h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.join-table {
+  margin-bottom: 25px;
+}
+
+.join-table tr {
+  height: 55px;
+}
+
+.join-table [type="text"] {
+  margin-left: 10px;
+}
+
+.join-table [type="text"],
+[type="password"],
+[type="tel"],
+[type="email"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.join-table [type="tel"],
+[type="email"] {
+  margin-left: 10px;
+}
+
+.join-btn > [type="submit"] {
+  margin: 0 20px;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  font: inherit;
+  color: white;
+  border-radius: 4px;
+  background-color: royalblue;
+}
+
+/* 글작성하기 */
+.main.write {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.write > h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.write-tl {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.write-tl tr {
+  height: 50px;
+}
+
+.write-tl tr:nth-child(3) {
+  height: 350px;
+}
+
+.write-tl select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.write-tl textarea {
+  resize: none;
+  height: 330px;
+}
+
+.write-tl textarea,
+[type="text"] {
+  width: 500px;
+}
+
+.write [type="file"] {
+  margin-left: 10px;
+}
+
+.write-btn {
+  width: 600px;
+  height: 40px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+.write-btn > [type="submit"] {
+  border: 0;
+  background-color: royalblue;
+  border-radius: 4px;
+  height: 40px;
+  width: 150px;
+  font: inherit;
+  color: white;
 }
