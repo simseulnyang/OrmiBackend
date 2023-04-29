@@ -1,0 +1,202 @@
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+  width: 1000px;
+  margin: auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 60px;
+  border-bottom: 2px solid #ddd;
+}
+
+.header-title {
+  /* border: 1px solid black; */
+  padding: 5px 10px;
+}
+
+.header-link {
+  margin: 20px 0;
+}
+
+.header-link a {
+  padding: 10px 15px;
+  font: inherit;
+}
+
+/* footer */
+.footer {
+  margin-bottom: 10px;
+  width: 1000px;
+  height: 40px;
+  background-color: #ebe6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* layout */
+body {
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 인덱스, 게시판목록 */
+.list {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.list-title {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.list-desc {
+  padding: 10px 0;
+}
+
+.list-desc strong {
+  color: royalblue;
+}
+
+.list-main {
+  margin-bottom: 10px;
+}
+
+.list-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #ddd;
+  width: 800px;
+}
+
+.list-table thead {
+  background-color: #ddd;
+}
+
+.list-table tr {
+  border-top: 1px solid #ddd;
+  padding: 50px;
+  height: 40px;
+  text-align: center;
+}
+
+.list-table tr td:nth-child(2) {
+  text-align: left;
+  text-decoration: underline;
+}
+
+.list-btngroup {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.list-btn {
+  background-color: royalblue;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font: inherit;
+}
+
+/* 로그인 */
+.main.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 400px;
+}
+
+.login-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-container > div {
+  /* background-color: skyblue; */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.label1 {
+  width: 100px;
+}
+
+[type="text"],
+[type="password"] {
+  margin-left: 10px;
+  width: 100%;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+[type="checkbox"] {
+  margin-left: 100px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: royalblue;
+  border-radius: 4px;
+  font: inherit;
+  color: white;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.login-searchself {
+  /* 아이디찾기, 비밀번호찾기, 회원가입 */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-searchself a {
+  padding: 0 10px;
+}
+
+.login-searchself a:nth-child(2) {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
