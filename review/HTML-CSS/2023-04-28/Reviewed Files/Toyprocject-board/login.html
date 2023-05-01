@@ -23,6 +23,8 @@
     <div class="main login">
       <div class="login-container">
         <h1 class="login-title">로그인</h1>
+
+        <!-- [!] 해당영역 form으로 묶어주기 -->
         <!-- form -->
         <form>
           <div>
@@ -38,10 +40,13 @@
             <label for="check1">아이디저장</label>
           </div>
           <div class="login-btngroup">
-            <button tyle="submit" class="login-btn">로그인</button>
+            <!-- [!]submit 버튼으로 만들기! -->
+            <button type="submit" class="login-btn">로그인</button>
+            <!-- <a href="#" class="login-btn">로그인</a> -->
           </div>
         </form>
         <!-- //form -->
+
         <div class="login-searchself">
           <a href="#">아이디 찾기</a>
           <a href="#">비밀번호 찾기</a>

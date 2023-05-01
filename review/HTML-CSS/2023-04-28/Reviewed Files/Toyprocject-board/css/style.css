@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /* align-items: center; */
 }
 
 a {
@@ -27,7 +28,16 @@ a {
 /* header */
 .header {
   display: flex;
+  /* align-self: center; */
   align-items: center;
+  /* [!] 
+  컨텐츠들을 세로기준 가운데 정렬하려면 
+  
+  컨테이너에 align-items 속성을 사용해야합니다.
+  align-self 속성은 
+  컨테이너의 직계자식인 아이템에 개별적으로 세로정렬을 다르게 적용하고 싶을때 주는 속성입니다
+  */
+
   justify-content: space-between;
   /* width: 1000px; */
   height: 60px;
@@ -50,8 +60,9 @@ a {
 
 /* footer */
 .footer {
-  /* margin-bottom: 10px;
-  width: 1000px; */
+  /* [!] 아래 여백을 의도하신걸까요?  */
+  /* margin-bottom: 10px; */
+  /* width: 1000px; */
   height: 40px;
   background-color: #ebe6e6;
   display: flex;
@@ -136,6 +147,7 @@ a {
   text-align: center;
 }
 
+/* [!]form 태그 추가 */
 .login-container form > div {
   /* background-color: skyblue; */
   margin-bottom: 20px;
@@ -164,7 +176,6 @@ a {
   width: 100%;
   height: 40px;
   background-color: royalblue;
-  border: 0;
   border-radius: 4px;
   font: inherit;
   color: white;
@@ -173,6 +184,8 @@ a {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  /* [!]버튼으로 변경하면서 추가 */
+  border: 0;
 }
 
 /* 아이디찾기, 비밀번호찾기, 회원가입 */
@@ -214,6 +227,10 @@ a {
   height: 55px;
 }
 
+.join-table [type="text"] {
+  /* margin-left: 10px; */
+}
+
 .join-table [type="text"],
 .join-table [type="password"],
 .join-table [type="tel"],
@@ -223,6 +240,11 @@ a {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.join-table [type="tel"],
+.join-table [type="email"] {
+  /* margin-left: 10px; */
 }
 
 .join-btn > [type="submit"] {
@@ -267,6 +289,7 @@ a {
   border-radius: 4px;
   width: 200px;
   height: 32px;
+  /* margin-left: 10px; */
 }
 
 .write-tl input[type="text"] {

@@ -22,6 +22,7 @@
     <!-- body -->
     <div class="main join">
       <h2>회원가입</h2>
+
       <form method="post">
         <div>
           <table class="join-table">
@@ -46,7 +47,11 @@
               </td>
             </tr>
             <tr>
-              <th>성별</th>
+              <th>
+                <!-- [!] 라벨 태그를 사용하지 않습니다! 연결할 input 태그가 없습니다! -->
+                <!-- <label for="gender">성별</label> -->
+                성별
+              </th>
               <td>
                 <input type="radio" id="gender1" name="gender" checked />
                 <label for="gender1">남성</label>
@@ -84,6 +89,8 @@
             </tr>
           </table>
         </div>
+
+        <!-- [!] 전송 버튼까지 form으로 감싸야 합니다 -->
         <div class="join-btn">
           <input type="submit" value="회원가입" />
         </div>
