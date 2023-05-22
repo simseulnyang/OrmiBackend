@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/transition-property -->
+    <!-- 애니메이션 -->
+    <!-- https://ridibooks.com/books/2773000026?_s=search&_q=css++%EB%83%A5%EC%9D%B4%EC%A7%91%EC%82%AC&_rdt_sid=search&_rdt_idx=4 -->
+    <div class="flex h-64 justify-center items-center">
+      <button
+        class="transition ease-in-out delay-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded p-5 m-3 text-white"
+      >
+        Save Changes
+      </button>
+      <button
+        class="transition ease-linear bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded p-5 m-3 text-white"
+      >
+        Save Changes
+      </button>
+      <button
+        class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-100 rounded p-5 m-3 text-white"
+      >
+        Save Changes
+      </button>
+    </div>
+  </body>
+</html>
