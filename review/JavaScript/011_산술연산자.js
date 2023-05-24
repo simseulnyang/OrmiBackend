@@ -6,7 +6,7 @@ one + two;
 one - two;
 one * two;
 one / two;
-// one // two 는 업습니다. 주석이 되어버립니다.
+// one // two 는 없습니다. 주석이 되어버립니다.
 ~~(one / two);
 one ** two;
 one % two;
